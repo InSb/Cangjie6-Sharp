@@ -104,14 +104,14 @@
 ### ②Rime格式的數字版碼表
 Rime格式的數字版碼表，保留原官方的數字編碼與原排序，暫未收入Unicode的漢字以方框“□”佔位，您使用時若要輸入重碼字，需要將數字鍵作為編碼鍵入，這叫一個地地道道地地道道。
 
-按此下載含「文傳字庫GB／BG5符號碼」之Rime格式數字版碼表。
+[按此](https://github.com/InSb/Cangjie6-Sharp/releases/download/1.0/RimeData_20251102_Cangjie6_Sharp_Num.7z)下載含「文傳字庫GB／BG5符號碼」之Rime格式數字版碼表。
 
 ### ③Rime格式的全碼碼表
 Rime格式的碼表，使用我們補全的蒼頡檢字法全碼，去除了未收入Unicode的漢字與編碼，同時重新排序，輸入重碼字時只需選字，更方便使用。
 
-按此下載含「文傳字庫GB／BG5符號碼」之Rime格式全碼碼表。壓縮包內含三種排序版本，可依需求選用。
+[按此](https://github.com/InSb/Cangjie6-Sharp/releases/download/1.0/RimeData_20251102_Cangjie6_Sharp.7z)下載含「文傳字庫GB／BG5符號碼」之Rime格式全碼碼表。壓縮包內含三種排序版本，可依需求選用。
 
-按此下載含「文傳字庫GB／BG5符號碼」及傳統「ZX??」、「YYY??」符號之Rime格式全碼碼表。壓縮包同樣提供三種排序版本，可自由選擇。
+[按此](https://github.com/InSb/Cangjie6-Sharp/releases/download/1.0/RimeData_20251102_Cangjie6_Sharp_With_Legacy_Symbols.7z)下載含「文傳字庫GB／BG5符號碼」及傳統「ZX??」、「YYY??」符號之Rime格式全碼碼表。壓縮包同樣提供三種排序版本，可自由選擇。
 
 關於符號及排序之詳細說明，請參閱後文「排序」與「符號」兩節。
 
