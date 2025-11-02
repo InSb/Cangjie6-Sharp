@@ -7,7 +7,7 @@ import shutil
 import glob
 class Cangjie6SharpRimeCodeTableGenerator(object):
 	def __init__(self):
-		self.cj6_raw_file = open('./cj6raw.txt')
+		self.cj6_raw_file = open('./cangjie6_sharp.tsv')
 		self.cj6_with_num = StringIO()
 		self.cj6_sorted = StringIO()
 		self.cj6_sorted_traditional_preference = StringIO()
