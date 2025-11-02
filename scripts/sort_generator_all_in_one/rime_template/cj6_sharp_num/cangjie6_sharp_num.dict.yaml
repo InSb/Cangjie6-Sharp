@@ -1,0 +1,22 @@
+# encoding: utf-8
+#
+# 蒼頡檢字法文本化計劃（數字版）
+#
+# 發明人 朱邦復先生 沈紅蓮女士
+# 文本化工作 ArthurMcArthur InSb
+# 致謝 wcshds yi-bai
+# 本專案網址：
+# 相關項目：倉頡三代補完計畫
+# 專案網址：https://github.com/Arthurmcarthur/Cangjie3-Plus
+# 相關項目：倉頡五代補完計畫
+# 專案網址：https://github.com/Jackchows/Cangjie5
+#
+
+---
+name: "cangjie6_sharp_num"
+version: "2025"
+sort: original
+use_preset_vocabulary: true
+max_phrase_length: 1
+...
+

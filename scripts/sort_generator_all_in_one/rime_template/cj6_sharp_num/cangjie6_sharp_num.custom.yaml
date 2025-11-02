@@ -1,0 +1,14 @@
+patch:
+  abc_segmentor/extra_tags: {}
+  translator/enable_user_dict: false
+  translator/enable_sentence: false
+  "key_binder/bindings":
+    - {when: has_menu, accept: space, send: space}
+    - {when: composing, accept: space, send: Escape}
+    - { when: has_menu, accept: apostrophe, send: B }
+    - { when: has_menu, accept: bracketleft, send: C }
+    - { when: has_menu, accept: bracketright, send: D }
+    - { when: has_menu, accept: minus, send: E }
+    - { when: has_menu, accept: backslash, send: F }
+    - { when: paging, accept: comma, send: comma }
+    - { when: has_menu, accept: period, send: period }

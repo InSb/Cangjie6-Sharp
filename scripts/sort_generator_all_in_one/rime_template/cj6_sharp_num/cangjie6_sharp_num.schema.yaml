@@ -1,0 +1,205 @@
+abc_segmentor:
+  extra_tags:
+    {}
+customization: 3422885562
+engine:
+  filters:
+    - simplifier
+    - uniquifier
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - table_translator
+    - punct_translator
+    - reverse_lookup_translator
+key_binder:
+  bindings:
+    - {accept: space, send: space, when: has_menu}
+    - {accept: space, send: Escape, when: composing}
+    - {accept: apostrophe, send: B, when: has_menu}
+    - {accept: bracketleft, send: C, when: has_menu}
+    - {accept: bracketright, send: D, when: has_menu}
+    - {accept: minus, send: E, when: has_menu}
+    - {accept: backslash, send: F, when: has_menu}
+    - {accept: comma, send: comma, when: paging}
+    - {accept: period, send: period, when: has_menu}
+  import_preset: default
+menu:
+  alternative_select_keys: ABCDEF
+  page_size: 6
+punctuator:
+  import_preset: default
+recognizer:
+  patterns:
+    email: "^[a-z][-_.0-9a-z]*@.*$"
+    reverse_lookup: "`[a-z]*'?$"
+    uppercase: "^[A-Z][-_+.'0-9A-Za-z]*$\""
+    url: "^(www[.]|https?:|ftp:|mailto:).*$"
+reverse_lookup:
+  comment_format:
+    - "xform|1|㊀|"
+    - "xform|2|㊁|"
+    - "xform|3|㊂|"
+    - "xform|4|㊃|"
+    - "xform|5|㊄|"
+    - "xform|6|㊅|"
+    - "xform|7|㊆|"
+    - "xform|8|㊇|"
+    - "xform|9|㊈|"
+    - "xform|q|手|"
+    - "xform|w|田|"
+    - "xform|e|水|"
+    - "xform|r|口|"
+    - "xform|t|廿|"
+    - "xform|y|卜|"
+    - "xform|u|山|"
+    - "xform|i|戈|"
+    - "xform|o|人|"
+    - "xform|p|心|"
+    - "xform|a|日|"
+    - "xform|s|尸|"
+    - "xform|d|木|"
+    - "xform|f|火|"
+    - "xform|g|土|"
+    - "xform|h|竹|"
+    - "xform|j|十|"
+    - "xform|k|大|"
+    - "xform|l|中|"
+    - "xform|z|片|"
+    - "xform|x|止|"
+    - "xform|c|金|"
+    - "xform|v|女|"
+    - "xform|b|月|"
+    - "xform|n|弓|"
+    - "xform|m|一|"
+    - "xlit|~-^v|～‐↑↓|"
+  dictionary: luna_pinyin
+  preedit_format:
+    - "xform/([nl])v/$1ü/"
+    - "xform/([nl])ue/$1üe/"
+    - "xform/([jqxy])v/$1u/"
+  prefix: "`"
+  prism: luna_quanpin
+  suffix: "'"
+  tips: "〔拼音〕"
+schema:
+  author:
+    - "蒼頡檢字法（數字版）朱邦復先生 沈紅蓮女士 ArthurMcArthur InSb"
+  dependencies:
+    - luna_quanpin
+  description: |
+    蒼頡檢字法（數字版）
+    
+  name: "蒼頡檢字法（數字版）"
+  schema_id: cangjie6_sharp_num
+  version: 2017.custom.3422885562
+speller:
+  alphabet: "123456789qwertyuiopasdfghjklzxcvbnm"
+  delimiter: " '"
+  initials: "123456789qwertyuiopasdfghjklzxcvbnm"
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: ["中文", "西文"]
+  - name: full_shape
+    states: ["半角", "全角"]
+  - name: simplification
+    states: ["漢字", "汉字"]
+  - name: extended_charset
+    states: ["常用", "增廣"]
+  - name: ascii_punct
+    states: ["。，", "．，"]
+translator:
+  comment_format:
+    - "xform|1|㊀|"
+    - "xform|2|㊁|"
+    - "xform|3|㊂|"
+    - "xform|4|㊃|"
+    - "xform|5|㊄|"
+    - "xform|6|㊅|"
+    - "xform|7|㊆|"
+    - "xform|8|㊇|"
+    - "xform|9|㊈|"
+    - "xform|q|手|"
+    - "xform|w|田|"
+    - "xform|e|水|"
+    - "xform|r|口|"
+    - "xform|t|廿|"
+    - "xform|y|卜|"
+    - "xform|u|山|"
+    - "xform|i|戈|"
+    - "xform|o|人|"
+    - "xform|p|心|"
+    - "xform|a|日|"
+    - "xform|s|尸|"
+    - "xform|d|木|"
+    - "xform|f|火|"
+    - "xform|g|土|"
+    - "xform|h|竹|"
+    - "xform|j|十|"
+    - "xform|k|大|"
+    - "xform|l|中|"
+    - "xform|z|片|"
+    - "xform|x|止|"
+    - "xform|c|金|"
+    - "xform|v|女|"
+    - "xform|b|月|"
+    - "xform|n|弓|"
+    - "xform|m|一|"
+    - "xlit|~-^v|～‐↑↓|"
+  dictionary: cangjie6_sharp_num
+  disable_user_dict_for_patterns:
+    - "^.$"
+  enable_charset_filter: true
+  enable_sentence: false
+  enable_user_dict: false
+  preedit_format:
+    - "xform|1|㊀|"
+    - "xform|2|㊁|"
+    - "xform|3|㊂|"
+    - "xform|4|㊃|"
+    - "xform|5|㊄|"
+    - "xform|6|㊅|"
+    - "xform|7|㊆|"
+    - "xform|8|㊇|"
+    - "xform|9|㊈|"
+    - "xform|q|手|"
+    - "xform|w|田|"
+    - "xform|e|水|"
+    - "xform|r|口|"
+    - "xform|t|廿|"
+    - "xform|y|卜|"
+    - "xform|u|山|"
+    - "xform|i|戈|"
+    - "xform|o|人|"
+    - "xform|p|心|"
+    - "xform|a|日|"
+    - "xform|s|尸|"
+    - "xform|d|木|"
+    - "xform|f|火|"
+    - "xform|g|土|"
+    - "xform|h|竹|"
+    - "xform|j|十|"
+    - "xform|k|大|"
+    - "xform|l|中|"
+    - "xform|z|片|"
+    - "xform|x|止|"
+    - "xform|c|金|"
+    - "xform|v|女|"
+    - "xform|b|月|"
+    - "xform|n|弓|"
+    - "xform|m|一|"
+    - "xlit|~-^v|～‐↑↓|"
