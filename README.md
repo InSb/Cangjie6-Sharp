@@ -53,10 +53,10 @@
 | Unicode CJK基本區 | 20916 |
 | Unicode CJK康熙部首增補 | 7 |
 | Unicode CJK擴展A區 | 6577 |
-| Unicode CJK擴展B區 | 30543 |
+| Unicode CJK擴展B區 | 30542 |
 | Unicode CJK擴展C區 | 183 |
 | Unicode CJK擴展D區 | 6 |
-| Unicode CJK擴展E區 | 213 |
+| Unicode CJK擴展E區 | 214 |
 | Unicode CJK擴展F區 | 332 |
 | Unicode CJK擴展G區 | 140 |
 | Unicode CJK擴展H區 | 104 |
@@ -64,7 +64,7 @@
 | Unicode CJK擴展J區 | 126 |
 | Unicode CJK相容表意字符 | 16 |
 | Unicode CJK筆劃 | 4 |
-| Unicode未收錄字符 | 5225 |
+| Unicode未收錄字符 | 5226 |
 | 其他字符 | 78 |
 
 ## 與坊間蒼頡檢字法的對比
