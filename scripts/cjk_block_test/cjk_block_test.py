@@ -29,7 +29,7 @@ def cjk_block_check():
     filter_set = set()
     unified_ideo_set = set(map(chr, range(0x4E00, 0xA000)))
 
-    with open('./file_to_check.txt', 'r', encoding='utf8') as fh:
+    with open('./cangjie6_sharp.tsv', 'r', encoding='utf8') as fh:
         for line in fh:
             line = line.rstrip("\n")
             if not line:
